@@ -13,7 +13,7 @@ class InputRequestsLogISCore(UIRESTModelISCore):
     model = InputLoggedRequest
     list_display = (
         'request_timestamp', 'response_timestamp', 'response_time', 'status', 'response_code', 'host', 'short_path',
-        'slug', 'ip', 'user', 'method', 'type', 'short_response_body', 'short_request_body'
+        'slug', 'ip', 'user__autocomplete_value', 'method', 'type', 'short_response_body', 'short_request_body'
     )
 
     form_fieldsets = (
